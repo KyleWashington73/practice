@@ -12,19 +12,21 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'practice' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'practice' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'practice' ), 'practice', '<a href="http://kylewashington.com">Kyle Washington</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="footer">
+		<?php
+            wp_nav_menu(array(
+                'menu' => 'Nav Menu',
+                'theme_location' => 'footer-menu',
+                'menu_class' => 'footer-menu',
+                'menu_id' => 'footer-id'
+            ))
+        ?>
+		    <p><i class="fa fa-copyright"></i>Copyright 2022 Kyle Washington <br> All Rights Reserved.</p>
+			<i class="fa fa-github-alt"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-wordpress"></i>
+		    </div>
+		<div class="footer"></div> 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -1,8 +1,23 @@
+.site-header  {
+	width: 100%;
+	height: 50px;
+	background-color: rgb(168, 178, 231);
+	// Logo //	
+ .site-branding{
+    height: 50px;
+	width: 50px;
+	float:left;
+	margin: 0 15px;
+
+}
+}
+
 .main-navigation {
 	display: block;
 	width: 100%;
-
+// Only style the list of links here(not actual link!) //
 	ul {
+		float: right;
 		display: none;
 		list-style: none;
 		margin: 0;
@@ -56,10 +71,21 @@
 		&.focus > a {
 		}
 	}
-
+    // Style links here //
 	a {
 		display: block;
 		text-decoration: none;
+		// use padding for box effect! //
+		padding: 13px 30px;
+		color: #fff;
+		&:hover {
+			color:#ffffff;
+			background-color: blue;
+		}
+		&:active {
+			color: red;
+		}
+	}
 	}
 
 	.current_page_item > a,
@@ -67,7 +93,7 @@
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}
-}
+
 
 /* Small menu. */
 .menu-toggle,
@@ -106,4 +132,8 @@
 		text-align: end;
 		flex: 1 0 50%;
 	}
+}
+
+.site-title {
+	display: none;
 }

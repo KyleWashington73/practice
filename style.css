@@ -60,6 +60,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -520,9 +524,6 @@ table {
 a {
   color: #4169e1;
 }
-a:visited {
-  color: #800080;
-}
 a:hover, a:focus, a:active {
   color: #191970;
 }
@@ -619,11 +620,24 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.site-header {
+  width: 100%;
+  height: 50px;
+  background-color: #a8b2e7;
+}
+.site-header .site-branding {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 0 15px;
+}
+
 .main-navigation {
   display: block;
   width: 100%;
 }
 .main-navigation ul {
+  float: right;
   display: none;
   list-style: none;
   margin: 0;
@@ -658,7 +672,17 @@ textarea {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding: 13px 30px;
+  color: #fff;
 }
+.main-navigation a:hover {
+  color: #ffffff;
+  background-color: blue;
+}
+.main-navigation a:active {
+  color: red;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -696,15 +720,74 @@ textarea {
   flex: 1 0 50%;
 }
 
+.site-title {
+  display: none;
+}
+
+.site-footer:hover {
+  color: blue;
+}
+.site-footer:active {
+  color: red;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a8b2e7;
+  color: #a8b2e7;
+  text-align: left;
+  padding-left: 100px;
+}
+
+a {
+  text-decoration: none;
+  padding: 13px 30px;
+  color: #fff;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: red;
+}
+
+ul {
+  float: right;
+  display: flex;
+}
+
+p {
+  color: #ffffff;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.fa-github-alt {
+  margin-left: 375px;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.fa-wordpress {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.fa-linkedin {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 50px;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
   display: block;
-}
-
-.post,
-.page {
-  margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
@@ -754,7 +837,7 @@ textarea {
 
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
-  display: inline-block;
+  display: inline;
 }
 
 /* Captions

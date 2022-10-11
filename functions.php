@@ -50,6 +50,7 @@ function practice_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'practice' ),
+			'footer-menu' => __('Footer Menu', 'thesetup-practice01'),
 		)
 	);
 

@@ -1,0 +1,62 @@
+.site-footer {
+    &:hover {
+        color: blue;
+    }
+    &:active {
+        color: red;
+    }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(168, 178, 231);
+    color: rgb(168, 178, 231);
+    text-align: left;
+    padding-left: 100px;
+ }
+
+ a {
+    text-decoration: none;
+    padding: 13px 30px;
+    color: #fff;
+    &:hover {
+        color: blue;
+    }
+    &:active {
+        color: red;
+    }
+ }
+
+ 
+ ul {
+    float: right;
+    display: flex;
+ }
+
+ p {
+    color: #ffffff;
+    text-align: left;
+    padding-top: 50px;
+ }
+
+ .fa-github-alt {
+    margin-left: 375px;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 50px;
+}
+
+.fa-wordpress {
+   font-size: 30px;
+   color: #ffffff;
+   padding: 50px;
+}
+
+.fa-linkedin {
+   font-size: 30px;
+   color: #ffffff;
+   padding: 50px;
+}
