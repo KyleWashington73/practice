@@ -8,7 +8,7 @@
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -34,6 +34,7 @@
  ul {
     float: right;
     display: flex;
+    margin-right: 110px;
  }
 
  p {

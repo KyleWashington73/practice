@@ -90,8 +90,10 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 4em;
+  color: orange;
+  padding-top: 30px;
+  padding-left: 17px;
 }
 
 /* Grouping content
@@ -370,7 +372,6 @@ template {
 --------------------------------------------- */
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-*,
 *::before,
 *::after {
   box-sizing: inherit;
@@ -732,7 +733,7 @@ textarea {
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -757,6 +758,7 @@ a:active {
 ul {
   float: right;
   display: flex;
+  margin-right: 110px;
 }
 
 p {
@@ -803,6 +805,80 @@ p {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.section-1 {
+  height: 845px;
+  width: auto;
+  border-radius: 4px;
+  border: 2px solid orange;
+  background-color: aqua;
+}
+
+.background-image {
+  height: 1000px;
+  width: auto;
+}
+
+.section-2 {
+  height: 500px;
+  width: auto;
+  border-radius: 4px;
+  border: 2px solid orange;
+  background-color: aqua;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottom-left h1 {
+  margin: 0;
+}
+
+.top-left {
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  left: 16px;
+}
+.top-left .words {
+  color: white;
+  font-size: 20px;
+  margin-left: 22px;
+  margin-top: -120px;
+}
+.top-left .word {
+  color: white;
+  font-size: 50px;
+  margin-left: 22px;
+  margin-top: -120px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Comments

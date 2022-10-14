@@ -7,5 +7,7 @@
 	*/
 ?>
 <?php get_header(); ?>
-	<!-- code goes here -->
+
+<?php get_template_part('template-parts/hero')?>
+
 <?php get_footer();?>
