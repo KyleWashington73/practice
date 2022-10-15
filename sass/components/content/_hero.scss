@@ -39,19 +39,25 @@
     text-align: left;
     top: 8px;
     left: 16px;
-    .words {
-        color: white;
-        font-size: 20px;
-        margin-left: 22px;
-       margin-top: -120px;
+    .title {
+      margin-left: 72px;
     }
     .word {
         color: white;
         font-size: 50px;
-        margin-left: 22px;
-       margin-top: -120px;
+        margin-left: 72px;
+       margin-top: -130px;
     }
+    .words {
+        color: white;
+        font-size: 20px;
+        margin-left: 82px;
+       margin-top: -80px;
+    }
+    
   }
+
+  
   
   .top-right {
     position: absolute;
@@ -70,4 +76,84 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    margin-left: 85px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .button:hover {
+    background-color: #fff;
+  }
+
+  .even-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    
+    
+  }
+
+  .even-columns {
+ //  flex-basis: 100%;
+  }
+
+  .col {
+    height: 230px;
+    width: 340px;
+    
+    background-color: #fff;
+    //border: 2px solid black;
+  }
+
+  .mess {
+    text-align: center;
+    color: black;
+    margin-top: -40px;
+    padding: 0px;
+  }
+
+  .age {
+    text-align: center;
+    color: grey;
+    margin-top: -25px;
+    padding: 10px;
+  }
+  
+
+  .content-flow {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 67%;
+    //background-color: limegreen;
+  }
+
+  .jug-icon {
+    height: 150px;
+    width: 150px;
+    margin-top: -20px;
+  }
+
+  .menu-icon {
+    height: 150px;
+    width: 150px;
+    margin-top: -20px;
+  }
+
+  .fruit-icon {
+    height: 150px;
+    width: 150px;
+    margin-top: -20px;
   }
